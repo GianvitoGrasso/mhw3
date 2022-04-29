@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+
+/*NAV*/
+
+#flex-containernav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navitems {
+    background-color: lightgray;
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    margin: 0px;
+}
+/*HEADER*/
+
+#flex-containerheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.headeritems {
+    position: absolute;
+    color:red;
+    text-align: center;
+    font-size: 3em;
+}
+
+.imgitems {
+    width: 100%;
+    height: 500px;
+}
+
+.logoitems {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 350px;
+    border-radius: 200px;
+}
+
+/*SECTION*/
+
+.flex-containersection {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 20%;
+}
+
+section div p {
+    margin: 20 0 0 0px;
+}
+
+section div img{
+    height: 500px;
+    width: 100%;
+    margin: 0 0 100 0px;
+}
+
+p,a {
+    text-align: center;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 150px 20%;
+}
+.first {
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+}
+.second {
+    width: 25%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.large {
+    background-color:lightblue;
+    font-size: 30px;
+}
+
+.font1 {
+    font-weight: bold;
+    font-style:italic;
+    font-family:'Times New Roman', 'Roboto Mono', serif;
+    font-size: 16px;
+    color:darkblue;
+    line-height: 16px;
+}
+
+.font2 {
+    font-weight: bold;
+    font-style:normal;
+    font-family: 'Rock 3D', cursive;
+    font-size: 18px;
+    color:black;
+    line-height: 18px;
+}
+
+.font3 {
+    font-weight:100;
+    font-style:oblique;
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    font-size: 20px;
+    color:yellowgreen;
+    line-height: 20px;
+}
+
+.font4 {
+    font-weight:normal;
+    font-style:italic;
+    font-size: 22px;
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    color:brown;
+    line-height: 22px;
+}
+
+.font5 {
+    font-weight: bold;
+    font-style:oblique;
+    font-family: 'Rock 3D', Helvetica, sans-serif;
+    font-size: 25px;
+    color:blue;
+    line-height: 25px;
+}
+
+
+/*FOOTER*/
+
+#flex-containerfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+}
+
+.footeritems {
+    font-size: 2em;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .imgitems {
+        height: 250px;
+    }
+
+    .headeritems {
+        font-size: 1.5em;
+    }
+
+    .logoitems {    
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 175px;
+    }
+    #flex-containersection {
+        margin: 80 60px;
+    }
+    .footeritems {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .imgitems {
+        height: 250px;
+    }
+
+    .headeritems {
+        font-size: 1.3em;
+    }
+
+    .logoitems {    
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 175px;
+    }
+    #flex-containersection {
+        margin: 80 60px;
+    }
+
+    .footeritems {
+        font-size: 1.3em;
+    }
+}
+
+
